@@ -1,0 +1,172 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.navbar {
+    background: linear-gradient(to right, #ff7eb3, #ff758c, #ff6f61);
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.navbar h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Heading Image */
+.main-heading-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Article Content */
+.article-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.article-content h1 {
+    font-size: 2.5rem;
+    color: #444;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+/* Points */
+.point {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.point-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.point-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.pagination .page-number,
+.pagination .arrow {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    margin: 0 0.3rem;
+    font-size: 1.2rem;
+    color: #444;
+    background: #f0f0f0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.pagination .page-number:hover,
+.pagination .arrow:hover {
+    background: #ff758c;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.pagination .page-number.active {
+    background: #ddd;
+    color: #777;
+    cursor: default;
+}
+
+/* Footer with Social Icons */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+.social-icons {
+    margin-bottom: 1rem;
+}
+
+.social-link i {
+    font-size: 1.8rem;
+    color: #555;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link i:hover {
+    transform: scale(1.2);
+    color: #007BFF;
+}
+/* Styled Unordered List */
+.article-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.article-content ul li {
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.article-content ul li:hover {
+    background: #ffebee;
+    transform: translateX(5px);
+    cursor: pointer;
+}
+
+/* Add colorful icons */
+.article-content ul li::before {
+    content: "✔️"; /* Replace with your preferred emoji or icon */
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color: #ff6f61;
+}
+
+/* Highlighted Links */
+.article-content ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff6f61;
+    transition: color 0.3s ease, text-shadow 0.2s ease;
+}
+
+.article-content ul li a:hover {
+    color: #d84315;
+    text-shadow: 0 0 5px rgba(255, 111, 97, 0.8);
+}
+
